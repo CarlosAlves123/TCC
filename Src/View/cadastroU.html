@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <section>
+        <div id="mensagem-erro" style="color: red;"></div>
+
+        <div class="logo"><img src="../assets/logo sem bg.png" alt=""></div>
+        <div class="form-box2">
+            <div class="form-value">
+                <form action="../Controller/cadastroU.php">
+
+                    <h2>Cadastro</h2>
+                    <div class="inputbox">
+                        <ion-icon name="person"></ion-icon>
+                        <input type="text" name="nome" required>
+                        <label for="">Nome</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="senha" required>
+                        <label for="">Senha</label>
+                    </div>
+                    <div class="choice-button">
+                        <label>
+                            <input type="radio" name="sexo" value="Masculino">
+                            Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="Feminino">
+                            Feminino
+                        </label>
+                    </div>
+                    
+                      
+                    <div class="forget">
+                    </div>
+
+                    <div class="register">
+                        <button type="submit" name="cadastrar">Cadastrar</button>
+                    </div>
+                    <button onclick="window.location.href = 'login.html'">Voltar</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+<script>
+    // Função para exibir a mensagem de erro
+    window.onload = function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var cadastroError = urlParams.get('cadastro');
+
+            if (cadastroError === 'erro') {
+                alert('Este email já está em uso. Por favor, escolha outro.');
+            }
+        };
+</script>
+
+</body>
+
+</html>

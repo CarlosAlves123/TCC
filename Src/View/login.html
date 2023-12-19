@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    
+    <section>
+        <div class="logo"><img src="../assets/logo sem bg.png" alt=""></div>
+        <div class="form-box">  
+            <div class="form-value">
+                <form action="../Controller/loginU.php" method="POST" id="login-form">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="senha" id="senha"required>
+                        <label>Senha</label>
+                    </div>
+                    
+                    <button type="submit" name="login">Login</button>
+                   
+                    
+                    <div class="register">
+                    <p>Não tenho conta <a href="cadastroU.html">Registrar</a></p>
+                </div>
+                
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script no  module src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script>
+    // Função para extrair parâmetros da URL
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    // Verifica a URL para a presença de um erro
+    var erro = getParameterByName("erro");
+
+    // Se houver um erro
+    if (erro) {
+        var mensagemErro = decodeURIComponent(erro);
+        alert("Erro: " + mensagemErro);
+    }
+    function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Verificar se o parâmetro de sucesso está presente na URL
+        window.onload = function() {
+            var cadastroSuccess = getParameterByName('cadastro');
+            if (cadastroSuccess === 'success') {
+                alert('Cadastro concluído com sucesso!');
+            }
+        };
+</script>
+
+</body>
+</html>

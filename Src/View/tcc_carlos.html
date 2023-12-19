@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  
+    <style>
+        .card {
+            width: 300px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 15px;
+            padding: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            display: inline-block;
+            vertical-align: top;
+            box-sizing: border-box;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .exercise-name h3 {
+            font-size: 18px;
+            margin: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .video-container {
+            display: none;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio for the video */
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            border-radius: 5px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .description {
+            display: none;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            height: 80px;
+        }
+
+        .description p {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #555;
+          
+            
+        }
+
+        .description strong {
+            color: #333;
+        }
+
+        .series {
+            display: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="exercise-name">
+            <h3>Agachamento</h3>
+        </div>
+        <div class="video-container" id="video1">
+            <!-- Substitua o URL do iframe a seguir pelo vídeo desejado -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0bUi9N_MAhI?si=7hg2FHfBiTiyMFdO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+            <p><strong>Descrição:</strong> O agachamento é um exercício que trabalha os músculos das pernas e glúteos. É uma atividade fundamental para o desenvolvimento da força e resistência desses grupos musculares.</p>
+        </div>
+        <div class="series">
+            <p><strong>Séries:</strong> Recomenda-se fazer 3 séries de 10 repetições, com um descanso de 1-2 minutos entre as séries.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="exercise-name">
+            <h3>Flexões</h3>
+        </div>
+        <div class="video-container" id="video2">
+            <!-- Substitua o URL do iframe a seguir pelo vídeo desejado -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9LZrEdCr0w" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+            <p><strong>Descrição:</strong> As flexões são um exercício eficaz para fortalecer os músculos do peito, ombros e tríceps.</p>
+        </div>
+        <div class="series">
+            <p><strong>Séries:</strong> Faça 3 séries de 15 repetições, com um descanso de 1-2 minutos entre as séries.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="exercise-name">
+            <h3>Prancha</h3>
+        </div>
+        <div class="video-container" id="video3">
+            <!-- Substitua o URL do iframe a seguir pelo vídeo desejado -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/B296mZKkTec" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="description">
+            <p><strong>Descrição:</strong> A prancha é um exercício para fortalecer o core e melhorar a estabilidade do corpo.</p>
+        </div>
+        <div class="series">
+            <p><strong>Séries:</strong> Mantenha a posição por 3 séries de 30 segundos a 1 minuto, com descanso de 1 minuto entre as séries.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleCard(card) {
+            var video = card.querySelector('.video-container');
+            var description = card.querySelector('.description');
+            var series = card.querySelector('.series');
+            if (video.style.display === 'none' || video.style.display === '') {
+                video.style.display = 'block';
+                description.style.display = 'block';
+                series.style.display = 'block';
+            } else {
+                video.style.display = 'none';
+                description.style.display = 'none';
+                series.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

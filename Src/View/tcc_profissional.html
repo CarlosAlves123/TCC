@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<style>
+
+
+    .fundo{
+        background-color: #949292;
+        color: #ffffff;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .topo{
+        text-align: center;
+        height: 100px;
+        background-color: #555;
+        border-radius: 100px;
+        
+
+    }
+
+    .exercise-card {
+        width: 300px;
+        display: inline-block; /* Adicionando esta linha */
+        background-color: #555;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        border-radius: 10px;
+    }
+
+    .exercise-card:hover {
+        transform: scale(1.05);
+         background-color: rgb(41, 41, 41); 
+    }
+
+    .exercise-card h3 {
+        font-size: 18px;
+        margin: 0;
+        color: #ffffff;
+    }
+
+    .exercise-card p {
+        font-size: 14px;
+        margin: 5px 0;
+        color: #ffffff;
+        border-radius: 20px;
+    }
+
+    select {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body class="fundo"></body>
+<h2>Selecione uma ficha de treino e um dia da semana:</h2>
+
+<main class="container">
+    <div class="topo">
+      <center><img class="me-3" src="logo sem bg.png" alt="" width="100" height="100"></center> 
+      <div class="lh-1">
+        <h1 class="h6 mb-0 text-white lh-1"></h1>
+        <small></small>
+      </div>
+    </div>
+
+<form action="selecionarDia.php" method="post">
+    <div class="exercise-card">
+        <h3>Ficha de Treino A</h3>
+        <label for="dia_semana">Escolha o dia da semana:</label>
+        <select name="dia_semana[]">
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Quarta-feira</option>
+            <option value="Quarta-feira">Segunda-feira</option>
+            <option value="Quinta-feira">Quarta-feira</option>
+            <option value="Sexta-feira">Segunda-feira</option>
+            <option value="Sabado-feira">Quarta-feira</option>
+            <option value="Domingo">Segunda-feira</option>
+        </select>
+        <p><strong>Exercícios:</strong></p>
+        <p>Agachamento: 3 séries de 10 repetições</p>
+        <p>Flexões: 3 séries de 15 repetições</p>
+        <p>Prancha: 3 séries de 30 segundos</p>
+    </div>
+
+    <div class="exercise-card">
+        <h3>Ficha de Treino A</h3>
+        <select name="dia_semana[]">
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Quarta-feira</option>
+            <option value="Quarta-feira">Segunda-feira</option>
+            <option value="Quinta-feira">Quarta-feira</option>
+            <option value="Sexta-feira">Segunda-feira</option>
+            <option value="Sabado-feira">Quarta-feira</option>
+            <option value="Domingo">Segunda-feira</option>
+        </select>
+        <p><strong>Exercícios:</strong></p>
+        <p>Agachamento: 3 séries de 10 repetições</p>
+        <p>Flexões: 3 séries de 15 repetições</p>
+        <p>Prancha: 3 séries de 30 segundos</p>
+    </div>
+
+    <div class="exercise-card">
+        <h3>Ficha de Treino A</h3>
+        <select name="dia_semana[]">
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Quarta-feira</option>
+            <option value="Quarta-feira">Segunda-feira</option>
+            <option value="Quinta-feira">Quarta-feira</option>
+            <option value="Sexta-feira">Segunda-feira</option>
+            <option value="Sabado-feira">Quarta-feira</option>
+            <option value="Domingo">Segunda-feira</option>
+        </select>
+        <p><strong>Exercícios:</strong></p>
+        <p>Agachamento: 3 séries de 10 repetições</p>
+        <p>Flexões: 3 séries de 15 repetições</p>
+        <p>Prancha: 3 séries de 30 segundos</p>
+    </div>
+
+    <div class="exercise-card">
+        <h3>Ficha de Treino A</h3>
+        <select name="dia_semana[]">
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Quarta-feira</option>
+            <option value="Quarta-feira">Segunda-feira</option>
+            <option value="Quinta-feira">Quarta-feira</option>
+            <option value="Sexta-feira">Segunda-feira</option>
+            <option value="Sabado-feira">Quarta-feira</option>
+            <option value="Domingo">Segunda-feira</option>
+        </select>
+        <p><strong>Exercícios:</strong></p>
+        <p>Agachamento: 3 séries de 10 repetições</p>
+        <p>Flexões: 3 séries de 15 repetições</p>
+        <p>Prancha: 3 séries de 30 segundos</p>
+    </div>
+
+    <div class="exercise-card">
+        <h3>Ficha de Treino A</h3>
+        <select name="dia_semana[]">
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Quarta-feira</option>
+            <option value="Quarta-feira">Segunda-feira</option>
+            <option value="Quinta-feira">Quarta-feira</option>
+            <option value="Sexta-feira">Segunda-feira</option>
+            <option value="Sabado-feira">Quarta-feira</option>
+            <option value="Domingo">Segunda-feira</option>
+        </select>
+        <p><strong>Exercícios:</strong></p>
+        <p>Agachamento: 3 séries de 10 repetições</p>
+        <p>Flexões: 3 séries de 15 repetições</p>
+        <p>Prancha: 3 séries de 30 segundos</p>
+    </div>
+
+    <div class="exercise-card">
+        <h3>Ficha de Treino A</h3>
+        <select name="dia_semana[]">
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Quarta-feira</option>
+            <option value="Quarta-feira">Segunda-feira</option>
+            <option value="Quinta-feira">Quarta-feira</option>
+            <option value="Sexta-feira">Segunda-feira</option>
+            <option value="Sabado-feira">Quarta-feira</option>
+            <option value="Domingo">Segunda-feira</option>
+        </select>
+        <p><strong>Exercícios:</strong></p>
+        <p>Agachamento: 3 séries de 10 repetições</p>
+        <p>Flexões: 3 séries de 15 repetições</p>
+        <p>Prancha: 3 séries de 30 segundos</p>
+    </div>
+
+    <div class="exercise-card">
+        <h3>Ficha de Treino A</h3>
+        <select name="dia_semana[]">
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Quarta-feira</option>
+            <option value="Quarta-feira">Segunda-feira</option>
+            <option value="Quinta-feira">Quarta-feira</option>
+            <option value="Sexta-feira">Segunda-feira</option>
+            <option value="Sabado-feira">Quarta-feira</option>
+            <option value="Domingo">Segunda-feira</option>
+        </select>
+        <p><strong>Exercícios:</strong></p>
+        <p>Agachamento: 3 séries de 10 repetições</p>
+        <p>Flexões: 3 séries de 15 repetições</p>
+        <p>Prancha: 3 séries de 30 segundos</p>
+    </div>
+
+    <div class="exercise-card">
+        <h3>Ficha de Treino A</h3>
+        <select name="dia_semana">
+            <option value="1">Segunda-feira</option>
+            <option value="2">Quarta-feira</option>
+            <option value="3">Segunda-feira</option>
+            <option value="4">Quarta-feira</option>
+            <option value="5">Segunda-feira</option>
+            <option value="6">Quarta-feira</option>
+            <option value="0">Segunda-feira</option>
+        </select>
+        <p><strong>Exercícios:</strong></p>
+        <p>Agachamento: 3 séries de 10 repetições</p>
+        <p>Flexões: 3 séries de 15 repetições</p>
+        <p>Prancha: 3 séries de 30 segundos</p>
+    </div>
+
+    <div class="exercise-card">
+        <h3>Ficha de Treino A</h3>
+        <select name="dia_semana[]">
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Quarta-feira</option>
+            <option value="Quarta-feira">Segunda-feira</option>
+            <option value="Quinta-feira">Quarta-feira</option>
+            <option value="Sexta-feira">Segunda-feira</option>
+            <option value="Sabado-feira">Quarta-feira</option>
+            <option value="Domingo">Segunda-feira</option>
+        </select>
+        <p><strong>Exercícios:</strong></p>
+        <p>Agachamento: 3 séries de 10 repetições</p>
+        <p>Flexões: 3 séries de 15 repetições</p>
+        <p>Prancha: 3 séries de 30 segundos</p>
+    </div>
+    <input type="submit" value="Associar">
+</form>
+</body>
+</html>

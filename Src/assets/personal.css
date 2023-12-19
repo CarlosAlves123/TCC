@@ -1,0 +1,112 @@
+    body {
+        background-image: url(fundo3.jpg) ;
+        background-size: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .fundo1{
+        /* background-color: #949292; */
+        color: #ffffff;
+        text-align: center;
+        font-size: 25px;
+    }
+    .topo1{
+        text-align: center;
+        height: 100px;
+        background-color: #555;
+        border-radius: 10px;   
+    }
+    .topo2 {
+        text-align: center;
+        min-height: 200px; /* Ajustando a altura mínima para melhor se adequar às fichas */
+        width: 80%;
+        max-width: 1500px;
+        background-color: #555;
+        border-radius: 10px;
+        margin: 20px auto 0;
+        padding: 20px; /* Aumentando o espaçamento interno */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        border: 2px solid #ffffff;
+    }
+    input[type="submit"] {
+        background-color: #FFC21F;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+        margin-left: 560px;
+        margin-bottom: 50px;
+    }
+    input[type="submit"]:hover {
+        background-color: #FFC21F;
+    }
+    .exercise-card {
+    width: 300px;
+    height: 360px;
+    flex: 1 1 200px; /* Permitir flexibilidade de largura */
+    background-color: #555;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 10px;
+    color: #ffffff;
+    box-sizing: border-box; /* Considerar a largura e a altura no cálculo total */
+}
+    .exercise-card:hover {
+        transform: scale(1.01);   
+    }
+    .exercise-card h3 {
+        font-size: 18px;
+        margin: 0;
+        color: #ffffff;
+        background-color: #555;     
+    }
+    .exercise-card p {
+        font-size: 14px;
+        margin: 5px 0;
+        color: rgb(255, 255, 255);
+         background-color: #555;
+    }
+    select {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        background-color: #555;
+        color: #ffffff;
+    }
+    .box-search { 
+        display: flex;
+        justify-content: center;
+        gap: .1%;
+    }
+    .voltar{
+
+        position: absolute;
+        left: 0;
+        width: 70px;
+        height: 40px;
+        margin: 5px;
+        border-radius: 10px;
+        background: #FFC21F;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .btn-primary {
+        color: #000000 !important;
+        background-color: #FFC21F !important;
+        border-color: #d6a726 !important;
+    }
